@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image:linear-gradient(to left bottom, Sienna, Brown, Maroon, SaddleBrown, Chocolate);
+    /*(to left bottom, #e4a7db, #d245db, #a22dce, #7d3ac5, #4d56bd)*/
+    /*(to left bottom, #b00202, #8b0028, #8c0046, #890060, #9600a1)*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    height: 60vh;
+    min-width: 370px;
+    max-width: 370px;
+}
+
+.display {
+    width: 100%;
+    min-height: 20%;
+    max-height: min-content;
+    background-color: rgba(29, 27, 27, 0.327);
+    box-shadow:  rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: white;
+    word-break: break-all;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+.currentNumber {
+    font-size: 35px;
+}
+
+.previousNumber {
+    color: lightgoldenrodyellow;
+    font-size: 20px;
+}
+
+.mathSign {
+    font-size: 22px;
+}
+
+.panel {
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 3px;
+}
