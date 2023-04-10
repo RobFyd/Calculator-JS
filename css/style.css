@@ -34,6 +34,8 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     color: white;
+    border: 1px solid red;
+    border-radius: 10px;
     word-break: break-all;
     text-align: right;
     display: flex;
@@ -70,7 +72,8 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
     cursor: pointer;
-    border: 2px solid red;
+    border: none;
+    border-radius: 30px;
     outline: none;
     transition: all .2s ease-in-out;
 }
@@ -90,6 +93,7 @@ button:hover {
     width: 150px;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 5px 10px;
+    border-radius: 10px;
     font-weight: bold;
     text-align: center;
 }
