@@ -19,6 +19,36 @@ const historyBtn = document.querySelector(".js-historyBtn");
 
 let result = "";
 
+function displayNumbers() {
+    if (this.textContent === "." && currentNumber.innerHTML.includes(".")) return;
+    if (this.textContent === "." && currentNumber.innerHTML === "") return currentNumber.innerHTML = ".0"
+
+    currentNumber.innerHTML += this.textContent;
+};
+
+function operate() {
+    if (currentNumber.innerHTML === "" && this.textContent === "-") {
+        currentNumber.innerHTML = "-";
+        return;
+    }
+};
+
+function showResult() {
+
+};
+
+function clearScreen() {
+
+};
+
+function clearHistory() {
+
+};
+
+
+
+
+
 
 
 
