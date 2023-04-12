@@ -21,7 +21,9 @@ let result = "";
 
 function displayNumbers() {
     if (this.textContent === "." && currentNumber.innerHTML.includes(".")) return;
-    if (this.textContent === "." && currentNumber.innerHTML === "") return currentNumber.innerHTML = ".0"
+    if (this.textContent === "." && currentNumber.innerHTML === "") return currentNumber.innerHTML = "0."
+    if (this.textContent === "00" && currentNumber.innerHTML === "") return currentNumber.innerHTML = "0."
+    if (this.textContent === "0" && currentNumber.innerHTML === "0") return currentNumber.innerHTML = "0."
 
     currentNumber.innerHTML += this.textContent;
 };
@@ -31,6 +33,17 @@ function operate() {
         currentNumber.innerHTML = "-";
         return;
     }
+
+    else if (currentNumber.innerHTML === "") {
+        return;
+    }
+
+    if (mathSign.innerHTML !== "") {
+        showResult();
+    }
+    previousNumber.innerHTML = currentNumber.innerHTML;
+    mathSign.innerHTML = this.textContent;
+    currentNumber.innerHTML ="";
 };
 
 function showResult() {
