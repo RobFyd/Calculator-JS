@@ -43,12 +43,17 @@ function operate() {
     }
     previousNumber.innerHTML = currentNumber.innerHTML;
     mathSign.innerHTML = this.textContent;
-    currentNumber.innerHTML ="";
+    currentNumber.innerHTML = "";
 };
 
 function showResult() {
+    if (previousNumber.innerHTML === "" || currentNumber.innerHTML === "") return;
 
-};
+    let a = Number(currentNumber.innerHTML);
+    let b = Number(previousNumber.innerHTML);
+    let operator = mathSign.innerHTML;
+    
+}
 
 function clearScreen() {
 
