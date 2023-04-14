@@ -52,7 +52,38 @@ function showResult() {
     let a = Number(currentNumber.innerHTML);
     let b = Number(previousNumber.innerHTML);
     let operator = mathSign.innerHTML;
-    
+
+
+    switch (operator) {
+        case "+":
+            result = a + b;
+            break;
+        case "-":
+            result = b - a;
+            break;
+        case "x":
+            result = a * b;
+            break;
+        case ":":
+            result = b / a;
+            break;
+        case "2^":
+            result = b ** a;
+            break;
+    }
+
+    addToHistory();
+    historyBtn.classList.add('js-active');
+    currentNumber.innerHTML = result;
+    previousNumber.innerHTML = "";
+    mathSign.innerHTML = "";
+}
+
+function addToHistory() {
+    const newHistoryItem = document.createElement("li");
+    newHistoryItem.innerHTML = `${currentNumber.innerHTML} ${mathSign.innerHTML} ${previousNumber.innerHTML} = ${result}`
+    newHistoryItem.classList.add("history__item");
+    calculatorHistory.appendChild(newHistoryItem);
 }
 
 function clearScreen() {
