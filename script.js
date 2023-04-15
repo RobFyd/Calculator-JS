@@ -72,6 +72,7 @@ function showResult() {
             break;
     }
 
+    result = Math.round(result * 1000) / 1000;
     addToHistory();
     historyBtn.classList.add('js-active');
     currentNumber.innerHTML = result;
