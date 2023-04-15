@@ -81,22 +81,26 @@ function showResult() {
 
 function addToHistory() {
     const newHistoryItem = document.createElement("li");
-    newHistoryItem.innerHTML = `${currentNumber.innerHTML} ${mathSign.innerHTML} ${previousNumber.innerHTML} = ${result}`
+    newHistoryItem.innerHTML = `${previousNumber.innerHTML} ${mathSign.innerHTML} ${currentNumber.innerHTML} = ${result}`
     newHistoryItem.classList.add("history__item");
     calculatorHistory.appendChild(newHistoryItem);
 }
 
-function clearScreen() {
-
-};
-
 function clearHistory() {
-
+    calculatorHistory.textContent = "";
+    historyBtn.classList.remove('js-active');
+    // if(calculatorHistory.textContent === "") {
+    // historyBtn.classList.remove('js-active')    
+    // }
 };
 
 
-
-
+function clearScreen() {
+    result = "";
+    currentNumber.innerHTML = "";
+    previousNumber.innerHTML = "";
+    mathSign.innerHTML = "";
+};
 
 
 
