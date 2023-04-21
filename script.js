@@ -36,6 +36,9 @@ function displayNumbers() {
     if (parseInt(this.textContent) >= 1 && parseInt(this.textContent) <= 9 && currentNumber.innerHTML === "0") {
         return currentNumber.innerHTML = parseInt(this.textContent);
     };
+   /* if (this.textContent === "+" && currentNumber.innerHTML.includes("-")) {
+        return currentNumber.innerHTML = ""
+    }; */
 
     currentNumber.innerHTML += this.textContent;
 };
