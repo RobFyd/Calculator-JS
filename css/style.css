@@ -12,7 +12,8 @@ html {
 
 body {
     min-height: 100vh;
-    background-image: linear-gradient(to left bottom, Black, Maroon, Red, Maroon, Black);
+    padding: 70px;
+    background-image: linear-gradient(to bottom, Black, Maroon, Red, Maroon, Black);
     display: flex;
     flex-direction: column;
     justify-content: center;
