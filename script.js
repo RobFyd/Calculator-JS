@@ -32,13 +32,9 @@ function displayNumbers() {
     if (this.textContent === "0" && currentNumber.innerHTML === "0") {
         return currentNumber.innerHTML = "0."
     };
-    //if (this.textContent === "1" && currentNumber.innerHTML === "0") return currentNumber.innerHTML = "1"
     if (parseInt(this.textContent) >= 1 && parseInt(this.textContent) <= 9 && currentNumber.innerHTML === "0") {
         return currentNumber.innerHTML = parseInt(this.textContent);
     };
-   /* if (this.textContent === "+" && currentNumber.innerHTML.includes("-")) {
-        return currentNumber.innerHTML = ""
-    }; */
 
     currentNumber.innerHTML += this.textContent;
 };
@@ -105,9 +101,6 @@ function addToHistory() {
 function clearHistory() {
     calculatorHistory.textContent = "";
     historyBtn.classList.remove('js-active');
-    // if(calculatorHistory.textContent === "") {
-    // historyBtn.classList.remove('js-active')    
-    // }
 };
 
 
@@ -117,12 +110,6 @@ function clearScreen() {
     previousNumber.innerHTML = "";
     mathSign.innerHTML = "";
 };
-
-
-
-
-
-// buttons listeners
 
 operatorsButtons.forEach((button) => button.addEventListener("click", operate));
 
