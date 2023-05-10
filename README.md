@@ -13,7 +13,7 @@ Calculator contains:
 
 ### Scrrenshot
 
-![screenshot](png\calc2.png)
+![screenshot](https://github.com/RobFyd/Calculator-JS/blob/main/png/calc2.png)
 
 If you want to learn more and test the functionality of my first website, click below:
 
