@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
     <link rel="stylesheet" href="css/style.css">
     <script defer src="script.js"></script>
 </head>
@@ -45,7 +46,7 @@
             <button class="js-number">.</button>
         </div>
     </div>
-    <div class="caculator__history">
+    <div data-simplebar class="caculator__history">
         <p class="history__title">Last calculations <button class="history__btn js-historyBtn">Clear history</button>
         </p>
         <hr>
@@ -55,7 +56,7 @@
         </ul>
 
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
 
 </body>
 

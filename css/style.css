@@ -90,6 +90,7 @@ button:hover {
     min-height: 10vh;
     min-width: 370px;
     max-width: 370px;
+    max-height: 220px;
     margin: 10px;
     width: 150px;
     background-color: rgba(0, 0, 0, 0.2);
@@ -100,8 +101,8 @@ button:hover {
 }
 
 .history {
-list-style: none;
-color: white;
+    list-style: none;
+    color: white;
 }
 
 .history__title {
