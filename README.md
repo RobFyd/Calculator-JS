@@ -28,6 +28,7 @@ My logo:
 
 
 ```javascript
-let x = "love coding";
+let x = "Thank you for your time";
 console.log(x);
+// :)
 ```
