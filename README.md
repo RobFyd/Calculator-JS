@@ -4,7 +4,10 @@
 
 This is a simple calculator created extracurricularly during the programming course. The calculator page is still being improved.
 
-Calculator contains:
+### Calculator contains:
+
+![TechnologiesIcons](https://skillicons.dev/icons?i=html,css,js,github,vscode)
+
 - HTML
 - CSS
 - JS
