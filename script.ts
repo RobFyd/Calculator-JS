@@ -1,14 +1,14 @@
-const currentNumber = document.querySelector(".js-currentNumber");
-const previousNumber = document.querySelector(".js-previousNumber");
-const mathSign = document.querySelector(".js-mathSign");
-const numbersButtons = document.querySelectorAll(".js-number");
-const operatorsButtons = document.querySelectorAll(".js-operator");
-const equalsButton = document.querySelector(".js-equals");
-const clearButton = document.querySelector(".js-clear");
-const calculatorHistory = document.querySelector(".js-history");
-const historyBtn = document.querySelector(".js-historyBtn");
+const currentNumber = document.querySelector(".js-currentNumber") as HTMLDivElement;
+const previousNumber = document.querySelector(".js-previousNumber") as HTMLDivElement;
+const mathSign = document.querySelector(".js-mathSign") as HTMLDivElement;
+const numbersButtons = document.querySelectorAll(".js-number") as NodeListOf<HTMLButtonElement>;
+const operatorsButtons = document.querySelectorAll(".js-operator") as NodeListOf<HTMLButtonElement>;
+const equalsButton = document.querySelector(".js-equals") as HTMLButtonElement;
+const clearButton = document.querySelector(".js-clear") as HTMLButtonElement;
+const calculatorHistory = document.querySelector(".js-history") as HTMLUListElement;
+const historyBtn = document.querySelector(".js-historyBtn") as HTMLButtonElement;
 
-let result = "";
+let result: string = "";
 
 function displayNumbers() {
   if (this.textContent === "." && currentNumber.innerHTML.includes(".")) {
