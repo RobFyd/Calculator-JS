@@ -35,3 +35,6 @@ let x = "Thank you for your time";
 console.log(x);
 // :)
 ```
+
+(TS to JS):
+    tsc script.ts --target es2015
