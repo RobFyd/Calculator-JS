@@ -1,1 +1,10 @@
 console.log('Hello, world!');
+var currentNumber = document.querySelector(".js-currentNumber");
+var previousNumber = document.querySelector(".js-previousNumber");
+var mathSign = document.querySelector(".js-mathSign");
+var numbersButtons = document.querySelectorAll(".js-number");
+var operatorsButtons = document.querySelectorAll(".js-operator");
+var equalsButton = document.querySelector(".js-equals");
+var clearButton = document.querySelector(".js-clear");
+var calculatorHistory = document.querySelector(".js-history");
+var historyBtn = document.querySelector(".js-historyBtn");
