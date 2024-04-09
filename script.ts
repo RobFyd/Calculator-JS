@@ -9,3 +9,5 @@ const equalsButton = document.querySelector(".js-equals")as HTMLButtonElement;
 const clearButton = document.querySelector(".js-clear")as HTMLButtonElement;
 const calculatorHistory = document.querySelector(".js-history")as HTMLDivElement;
 const historyBtn = document.querySelector(".js-historyBtn")as HTMLButtonElement;
+
+const result: number = 0;
