@@ -12,7 +12,25 @@ const historyBtn = document.querySelector(".js-historyBtn")as HTMLButtonElement;
 
 const result: number = 0;
 
+function displayNumbers() {
 
+}
+
+function operate() {
+
+}
+
+function showResult() {
+
+}
+
+function clearScreen() {
+
+}
+
+function clearHistory() {
+
+}
 
 function init() {
     operatorsButtons.forEach((button) =>
