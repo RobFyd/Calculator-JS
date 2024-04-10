@@ -11,3 +11,19 @@ const calculatorHistory = document.querySelector(".js-history")as HTMLDivElement
 const historyBtn = document.querySelector(".js-historyBtn")as HTMLButtonElement;
 
 const result: number = 0;
+
+
+
+function init() {
+    operatorsButtons.forEach((button) =>
+        button.addEventListener("click", operate)
+    );
+    equalsButton.addEventListener("click", showResult);
+    clearButton.addEventListener("click", clearScreen);
+    numbersButtons.forEach((button) => {
+         button.addEventListener("click", displayNumbers);
+    });
+    historyBtn.addEventListener("click", clearHistory);
+}
+
+init();
