@@ -10,6 +10,7 @@ const clearButton = document.querySelector(".js-clear");
 const calculatorHistory = document.querySelector(".js-history");
 const historyBtn = document.querySelector(".js-historyBtn");
 const result = 0;
+<<<<<<< HEAD
 function displayNumbers() {
 }
 function operate() {
@@ -20,6 +21,8 @@ function clearScreen() {
 }
 function clearHistory() {
 }
+=======
+>>>>>>> befc40ffefeff7846f932d0f34b02a7f806d663b
 function init() {
     operatorsButtons.forEach((button) => button.addEventListener("click", operate));
     equalsButton.addEventListener("click", showResult);
