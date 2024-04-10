@@ -36,5 +36,10 @@ console.log(x);
 // :)
 ```
 
+```html
 (TS to JS):
-    tsc script.ts --target es2015
+    tsc script.ts --target ES6 --strict
+
+(tsconfig.json):
+    tsc --init
+```
