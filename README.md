@@ -6,11 +6,12 @@ This is a simple calculator created extracurricularly during the programming cou
 
 ### Calculator contains:
 
-![TechnologiesIcons](https://skillicons.dev/icons?i=html,css,js,github,vscode)
+![TechnologiesIcons](https://skillicons.dev/icons?i=html,css,js,ts,github,vscode)
 
 - HTML
 - CSS
 - JS
+- TS
 - BEM convention
 - grid layout
 
