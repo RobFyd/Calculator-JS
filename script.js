@@ -10,3 +10,13 @@ const clearButton = document.querySelector(".js-clear");
 const calculatorHistory = document.querySelector(".js-history");
 const historyBtn = document.querySelector(".js-historyBtn");
 const result = 0;
+function init() {
+    operatorsButtons.forEach((button) => button.addEventListener("click", operate));
+    equalsButton.addEventListener("click", showResult);
+    clearButton.addEventListener("click", clearScreen);
+    numbersButtons.forEach((button) => {
+        button.addEventListener("click", displayNumbers);
+    });
+    historyBtn.addEventListener("click", clearHistory);
+}
+init();
