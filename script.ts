@@ -12,8 +12,14 @@ const historyBtn = document.querySelector(".js-historyBtn")as HTMLButtonElement;
 
 const result: number = 0;
 
-function displayNumbers() {
+function displayNumbers(this: HTMLButtonElement) {
+    if (this.textContent === "." && currentNumber.innerHTML.includes("."))
+        return;
+    if (this.textContent === "." && currentNumber.innerHTML === "") {
+        return (currentNumber.innerHTML = "0.");
+    }
 
+    currentNumber.innerHTML += this.textContent;
 }
 
 function operate() {
