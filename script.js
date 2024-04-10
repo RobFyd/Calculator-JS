@@ -1,3 +1,4 @@
+"use strict";
 console.log('Hello, world!');
 const currentNumber = document.querySelector(".js-currentNumber");
 const previousNumber = document.querySelector(".js-previousNumber");
