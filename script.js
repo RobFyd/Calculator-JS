@@ -84,6 +84,10 @@ function addToHistory() {
     calculatorHistory.appendChild(newHistoryItem);
 }
 function clearScreen() {
+    result = 0;
+    currentNumber.innerHTML = "";
+    previousNumber.innerHTML = "";
+    mathSign.innerHTML = "";
 }
 function clearHistory() {
 }
