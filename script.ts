@@ -10,6 +10,8 @@ const clearButton = document.querySelector(".js-clear")as HTMLButtonElement;
 const calculatorHistory = document.querySelector(".js-history")as HTMLDivElement;
 const historyBtn = document.querySelector(".js-historyBtn")as HTMLButtonElement;
 
+let result: number = 0;
+
 function displayNumbers(this: HTMLButtonElement) {
     if (this.textContent === "." && currentNumber.innerHTML.includes("."))
         return;
@@ -59,7 +61,6 @@ function showResult() {
     const a = Number(currentNumber.innerHTML);
     const b = Number(previousNumber.innerHTML);
     const operator = mathSign.innerHTML;
-    let result: number = 0;
 
     switch (operator) {
         case "+":
@@ -87,7 +88,10 @@ function showResult() {
 }
 
 function addToHistory() {
-
+  const newHistoryItem = document.createElement("li");
+  newHistoryItem.innerHTML = `${previousNumber.innerHTML} ${mathSign.innerHTML} ${currentNumber.innerHTML} = ${result}`;
+  newHistoryItem.classList.add("history__item");
+  calculatorHistory.appendChild(newHistoryItem);
 }
     
 
