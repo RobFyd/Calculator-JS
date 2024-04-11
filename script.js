@@ -71,9 +71,13 @@ function showResult() {
             result = Math.pow(b, a);
             break;
     }
+    addToHistory();
+    historyBtn.classList.add("js-active");
     currentNumber.innerHTML = result.toString();
     previousNumber.innerHTML = "";
     mathSign.innerHTML = "";
+}
+function addToHistory() {
 }
 function clearScreen() {
 }

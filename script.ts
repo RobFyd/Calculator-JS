@@ -79,11 +79,17 @@ function showResult() {
           break;
     }
 
-    // addToHistory();
+    addToHistory();
+    historyBtn.classList.add("js-active");
     currentNumber.innerHTML = result.toString();
     previousNumber.innerHTML = "";
     mathSign.innerHTML = "";
 }
+
+function addToHistory() {
+
+}
+    
 
 function clearScreen() {
 
