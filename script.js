@@ -9,7 +9,6 @@ const equalsButton = document.querySelector(".js-equals");
 const clearButton = document.querySelector(".js-clear");
 const calculatorHistory = document.querySelector(".js-history");
 const historyBtn = document.querySelector(".js-historyBtn");
-const result = 0;
 function displayNumbers() {
     if (this.textContent === "." && currentNumber.innerHTML.includes("."))
         return;
@@ -49,6 +48,32 @@ function operate() {
     currentNumber.innerHTML = "";
 }
 function showResult() {
+    if (previousNumber.innerHTML === "" || currentNumber.innerHTML === "")
+        return;
+    const a = Number(currentNumber.innerHTML);
+    const b = Number(previousNumber.innerHTML);
+    const operator = mathSign.innerHTML;
+    let result = 0;
+    switch (operator) {
+        case "+":
+            result = a + b;
+            break;
+        case "-":
+            result = b - a;
+            break;
+        case "x":
+            result = a * b;
+            break;
+        case ":":
+            result = b / a;
+            break;
+        case "2^":
+            result = Math.pow(b, a);
+            break;
+    }
+    currentNumber.innerHTML = result.toString();
+    previousNumber.innerHTML = "";
+    mathSign.innerHTML = "";
 }
 function clearScreen() {
 }

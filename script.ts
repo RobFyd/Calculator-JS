@@ -10,8 +10,6 @@ const clearButton = document.querySelector(".js-clear")as HTMLButtonElement;
 const calculatorHistory = document.querySelector(".js-history")as HTMLDivElement;
 const historyBtn = document.querySelector(".js-historyBtn")as HTMLButtonElement;
 
-const result: number = 0;
-
 function displayNumbers(this: HTMLButtonElement) {
     if (this.textContent === "." && currentNumber.innerHTML.includes("."))
         return;
@@ -56,7 +54,35 @@ function operate(this: HTMLButtonElement) {
 }
 
 function showResult() {
+    if (previousNumber.innerHTML === "" || currentNumber.innerHTML === "") return;
 
+    const a = Number(currentNumber.innerHTML);
+    const b = Number(previousNumber.innerHTML);
+    const operator = mathSign.innerHTML;
+    let result: number = 0;
+
+    switch (operator) {
+        case "+":
+          result = a + b;
+          break;
+        case "-":
+          result = b - a;
+          break;
+        case "x":
+          result = a * b;
+          break;
+        case ":":
+          result = b / a;
+          break;
+        case "2^":
+          result = b ** a;
+          break;
+    }
+
+    // addToHistory();
+    currentNumber.innerHTML = result.toString();
+    previousNumber.innerHTML = "";
+    mathSign.innerHTML = "";
 }
 
 function clearScreen() {
