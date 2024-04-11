@@ -33,6 +33,7 @@ function displayNumbers() {
     currentNumber.innerHTML += this.textContent;
 }
 function operate() {
+    var _a;
     if (currentNumber.innerHTML === "" && this.textContent === "-") {
         currentNumber.innerHTML = "-";
         return;
@@ -40,6 +41,12 @@ function operate() {
     else if (currentNumber.innerHTML === "") {
         return;
     }
+    if (mathSign.innerHTML !== "") {
+        showResult();
+    }
+    previousNumber.innerHTML = currentNumber.innerHTML;
+    mathSign.innerHTML = (_a = this.textContent) !== null && _a !== void 0 ? _a : "";
+    currentNumber.innerHTML = "";
 }
 function showResult() {
 }
