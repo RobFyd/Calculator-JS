@@ -16,6 +16,20 @@ function displayNumbers() {
     if (this.textContent === "." && currentNumber.innerHTML === "") {
         return (currentNumber.innerHTML = "0.");
     }
+    if (this.textContent === "00" && currentNumber.innerHTML === "") {
+        return (currentNumber.innerHTML = "0.");
+    }
+    if (this.textContent === "0" && currentNumber.innerHTML === "0") {
+        return (currentNumber.innerHTML = "0.");
+    }
+    if (this.textContent === "00" && currentNumber.innerHTML === "0") {
+        return (currentNumber.innerHTML = "0.");
+    }
+    if (this.textContent && parseInt(this.textContent) >= 1 &&
+        parseInt(this.textContent) <= 9 &&
+        currentNumber.innerHTML === "0") {
+        return (currentNumber.innerHTML = parseInt(this.textContent).toString());
+    }
     currentNumber.innerHTML += this.textContent;
 }
 function operate() {
