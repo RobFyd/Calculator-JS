@@ -39,8 +39,13 @@ function displayNumbers(this: HTMLButtonElement) {
     currentNumber.innerHTML += this.textContent;
 }
 
-function operate() {
-
+function operate(this: HTMLButtonElement) {
+    if (currentNumber.innerHTML === "" && this.textContent === "-") {
+        currentNumber.innerHTML = "-";
+        return;
+      } else if (currentNumber.innerHTML === "") {
+        return;
+    }
 }
 
 function showResult() {
