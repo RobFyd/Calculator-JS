@@ -90,6 +90,8 @@ function clearScreen() {
     mathSign.innerHTML = "";
 }
 function clearHistory() {
+    calculatorHistory.textContent = "";
+    historyBtn.classList.remove("js-active");
 }
 function init() {
     operatorsButtons.forEach((button) => button.addEventListener("click", operate));

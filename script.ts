@@ -103,7 +103,8 @@ function clearScreen() {
 }
 
 function clearHistory() {
-
+  calculatorHistory.textContent = "";
+  historyBtn.classList.remove("js-active");
 }
 
 function init() {
