@@ -13,7 +13,7 @@ html {
 body {
     min-height: 100vh;
     padding: 70px;
-    background-image: linear-gradient(to bottom, Black, Maroon, Red, Maroon, Black);
+    background-image: linear-gradient(to bottom, #e8c1a0, #d4a093, #c78082, #d4a093, #e8c1a0);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,10 +30,10 @@ body {
     width: 100%;
     min-height: 20%;
     max-height: min-content;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     color: white;
-    border: 1px solid red;
+    border: 1px solid white;
     border-radius: 10px;
     word-break: break-all;
     text-align: right;
@@ -42,6 +42,10 @@ body {
     justify-content: space-between;
     padding-right: 5px;
     font-weight: bold;
+}
+
+.display:hover {
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .current__number {
@@ -78,7 +82,7 @@ body {
 }
 
 button:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .equals {
@@ -86,7 +90,7 @@ button:hover {
     grid-column: -2/-1;
 }
 
-.caculator__history {
+.calculator__history {
     min-height: 10vh;
     min-width: 370px;
     max-width: 370px;
@@ -98,6 +102,10 @@ button:hover {
     border-radius: 10px;
     font-weight: bold;
     text-align: center;
+}
+
+.calculator__history:hover {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .history {
